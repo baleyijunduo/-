@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            margin: 0 auto;
+            /* height: 100px; */
+            width: 1000px;
+            /* background-color: pink; */
+        }
+
+        .bottom{
+            margin: 0 auto;
+            height: 200px;
+            width: 2000px;
+            background-color: green;
+        }
+
+        .left{
+            float: left;
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+
+        .rigth{
+            float: right;
+            height: 300px;
+            width: 50px;
+            background-color :rebeccapurple; 
+        }
+        /* 单伪元素清除法 */
+        /* 常用 */
+        .clearfix::after{
+            /* 伪元素必须有content属性 */
+            content: '';
+            /* 伪元素默认为行内元素，必须转化为块级元素 */
+            display: block;
+            clear: both;
+            /* 对某些浏览器兼容操作 */
+            height: 0;
+            visibility: hidden;
+        }
+        </style>
+</head>
+<body>
+    <div class="top clearfix">
+        <div class="left"></div>
+        <div class="rigth"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>

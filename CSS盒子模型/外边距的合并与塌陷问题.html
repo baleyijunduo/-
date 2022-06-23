@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            height: 100px;
+            width: 100px;
+            margin-bottom: 50px;
+            background-color: red;
+        }
+
+        .two{
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            background-color: blue;
+        }
+
+        .father{
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            overflow: hidden;
+        }
+
+        .son{
+            float: none;
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 当上下都有margin值时会合并，此时两个p标签距离只有50px -->
+    <p class="one"></p>
+    <p class="two"></p>
+
+    <!-- 当两个块级标签嵌套时，单独使用margin下调内部标签会使父子标签都下降 -->
+    <!-- 解决方法有四个 -->
+    <!-- 可以换成padding-top或者border-top下调 -->
+    <!-- 可以在父标签内添加overflow-hidden（推荐） -->
+    <!-- 可以将块级标签转换成行内标签 -->
+    <!-- 可以设置浮动 -->
+    <div class="father">
+        <div class="son">son</div>
+    </div>
+
+</body>
+</html>

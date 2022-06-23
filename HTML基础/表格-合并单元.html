@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- rowspan是上下合并，clospan是左右合并 左上原则 -->
+      <table border="1">
+        <caption><h2>学生表格</h2></caption>
+        <tr>
+        <th>姓名</th>
+        <th>班级</th>
+        <th>座号</th>
+        </tr>
+        <tr>
+            <tr>
+                <td>浩浩</td>
+                <td rowspan="2">100分</td>
+                <td>小浩浩</td>
+            </tr>
+            <tr>
+                <td>雷浩</td>
+                <td>小浩</td>
+            </tr>
+            <tr>
+                <td>雷</td>
+                <td colspan="2">90</td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>

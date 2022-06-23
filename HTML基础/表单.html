@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    文本框：<input type="text">
+    <br>
+    密码框：<input type="password">
+    <br>
+    单选框：<input type="radio">
+    <br>
+    多选框：<input type="checkbox">
+    <br>
+    文件框：<input type="file">
+    <br>
+
+    <!-- placehoder属性用于显示文本框中的提示字 -->
+    文本框：<input type="text" placeholder="请输入昵称">
+    <br>
+    密码框：<input type="password" placeholder="请输入密码">
+    <br>
+
+    <!-- name属性下同名为一组，一组中只能单选 -->
+    <!-- checked属性为默认选中 -->
+    性别：<input type="radio" name="sex">男<input type="radio" name="sex" checked>女
+    <br>
+    <input type="checkbox" checked>我同意协议
+    <br>
+
+    <!-- multiple属性支持多个文件上传 -->
+    <input type="file" multiple>
+    <br>
+    <!-- submit是提交按钮，reset是重置按钮，button是普通按钮 -->
+    <!-- value属性为按钮显示文字 -->
+    <!-- form为表单域标签，在域中按钮可对文本操作，标签中的action属性为数据传递路径 -->
+    <form action="">
+        账号：<input type="text">
+        <br>
+        密码：<input type="password">
+        <br>
+        <input type="submit" value="免费注册">
+        <input type="reset">
+        <input type="button" value="普通按钮">
+    </form>
+    <br>
+    <!-- button也可以作为标签 -->
+    <button>普通按钮</button>
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+    <button type="button">普通按钮</button>
+    <br>
+
+    <!-- select标签是下拉菜单整体 option标签是下拉菜单选项 -->
+    <!-- selected属性为默认选中 -->
+    <select >
+        <option >香蕉</option>
+        <option selected>苹果</option>
+        <option >李子</option>
+    </select>
+    <br>
+
+    <!-- textarea标签为文本域，cols和rows控制长宽（一般用css控制长宽） -->
+    <textarea cols="30" rows="10"></textarea>
+    <br>
+
+    <!-- label标签包含的文本点击后自动跳转到对应控件上 -->
+    <!-- 两种方法 -->
+    
+    <input type="radio" name="sex" id="man"> <label for="man">男</label>
+    <label ><input type="radio" name="sex">女</label>
+    <br>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 40px;
+            border-top: 3px solid #ff8500;
+            border-bottom: 1px solid #edeef0;
+        }
+
+        .box a{
+            height: 40px;
+            /* width: 80px; */
+            text-decoration: none;
+            display: inline-block;
+            font: 12px/40px 黑体;
+            color: #4c4c4c;
+            text-align: center;
+            /* 使用padding固定内边距，跟随字数改变方框，灵活性提升 */
+            padding: 0px 15px;
+        }
+        
+        .box a:hover{
+            background-color: #edeef0;
+            color: #ff8500;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#">新浪</a>
+        <a href="#">新浪导航新浪</a>
+        <a href="#">新浪导航浪</a>
+        <a href="#">新浪导</a>
+    </div>
+</body>
+</html>

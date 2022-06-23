@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kg{
+            height: 500px;
+            width: 500px;
+            color: red;
+        }
+    /* 块级转化 */
+        .changeblock{
+            display: block;
+        }
+        .changeinline{
+            display: inline;
+        }
+        .cib{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块级标签的宽度根据父标签调整，高度由内容撑开 -->
+    <!-- 块级标签独占一行 例如div，p-->
+    <div class="kg">123</div>
+
+    <!-- 行内元素一行可以有多个 -->
+    <!-- 宽高由内容撑开 不可设置宽高-->
+    <!-- 例如span，a标签 -->
+    <span class="kg">123</span>
+    <div>213</div>
+    <a href="#">4444</a>
+    <p>123</p>
+
+    <!-- 行内块一行可以显示多个，而且可以设置宽高 -->
+    <!-- 例如input标签，textarea标签，img标签等 -->
+    <input type="text" class="kg" placeholder="行内块标签">
+    <br>
+    <!-- 可以用display属性进行块的转化 -->
+    <div class="kg changeinline">123</div>
+    <p class="kg changeinline">1234</p>
+    <span class="kg changeblock">2134</span>
+    <a href="#" class="changeblock kg">dsada</a>
+</body>
+</html>

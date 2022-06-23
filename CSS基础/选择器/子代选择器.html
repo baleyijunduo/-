@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 子代选择器只控制子代标签，不影响孙子重孙子 -->
+    <style>
+        div > p
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>p标签</p>
+    <div>
+        <p>div底下的p标签</p>
+        <span>
+            <p>div底下的span标签底下的p标签</p>
+        </span>
+    </div>
+</body>
+</html>

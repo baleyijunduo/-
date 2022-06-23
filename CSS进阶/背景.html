@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 此背景将图片多张组合铺满 */
+        /* 背景图片一定要有宽高 */
+        div{
+            width: 1000px;
+            height: 1000px;
+            background-image: url(./img/平衡车.jpg);
+        }
+
+        p
+        {
+            width: 1000px;
+            height: 1000px;
+            background-color: red;
+            background-image: url(./img/平衡车.jpg);
+            /* 不平铺 */
+            background-repeat: no-repeat;
+        }
+
+        p.weizhi
+        {
+            /* 图片调整位置有两种写法，坐标和方位 */
+            /* 方位包括上(top)下(bottom)左(left)右(right)中(center) */
+            width: 1000px;
+            height: 1000px;
+            background-color: red;
+            background-image: url(./img/平衡车.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div>zizizizi</div>
+    <p>zzzz</p>
+    <br>
+    <p class="weizhi">wao</p>
+</body>
+</html>

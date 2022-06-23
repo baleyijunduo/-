@@ -1,0 +1,11 @@
+1.项目文件不能是中文
+2.所有项目文件都保存在xtx-pc-client中
+3.页面图标放在根目录中
+4.分为两个图片文件夹
+    images：存放固定图片，logo，修饰之类
+    uploads：存放非固定图片，商品图片等
+5.主页为index.html
+6.css文件分为三个
+    base.css:基础的公共样式
+    common.css：多个网页相同模块的重复样式
+    index.css:首页样式

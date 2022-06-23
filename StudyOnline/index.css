@@ -1,0 +1,316 @@
+body{
+    background-color: #f3f5f7;
+}
+
+*{
+    /* 清除默认外边距内边距 */
+    margin: 0 ;
+    padding: 0;
+    /* 防止内容撑大父标签 */
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    display: table;
+}
+
+.clearfix::after{
+    clear: both;
+}
+
+/* 版心样式 */
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 头部标签 */
+.header{
+    height: 42px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    /* 如果写成margin 30px 0，那么版心布局的margin就会失效，所以要用auto */
+    margin: 30px auto;
+    /* background-color: pink; */
+}
+
+h1{
+    float: left;
+}
+/* 导航 */
+.nav{
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+}
+
+.nav li{
+    float: left;
+    margin-right: 26px;
+}
+
+.nav li a{
+    display: block;
+    line-height: 42px;
+    padding:0 9px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+
+.serch{
+    float: left;
+    margin-left: 58px;
+    border: 1px solid #00a4ff;
+    height: 40px;
+    width: 412px;
+}
+
+.serch input{
+    float: left;
+    height: 38px;
+    width: 355px;
+    padding-left: 21px;
+    border: 0;
+    background-color: #f3f5f7;
+}
+
+.serch input::placeholder{
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: #bfbfbf;
+}
+
+.serch button{
+    float: right;
+    width: 50px;
+    height: 40px;
+    border: 0;
+    background-image: url(./img/btn.png);
+}
+
+.user{
+    float: right;
+    margin-right: 35px;
+    line-height: 42px;
+}
+
+.user img{
+    /* 调节图片对齐方式 */
+    vertical-align: middle;
+}
+
+.banner{
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .wrapper{
+    height: 420px;
+    background-image: url(./img/banner2.png);
+}
+
+.banner .left{
+    float: left;
+    padding: 10px 20px;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.banner .left li {
+    line-height: 44px;
+    
+    /* margin-bottom: 30px; */
+    font-size: 14px;
+    
+}
+
+.banner .left li a{
+    display: block;
+    color: #fff;
+}
+
+.banner .left li a:hover{
+    color: #0393d9;
+}
+
+.banner .left li span{
+    float: right;
+}
+
+.banner .right{
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.banner .right h2{
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+}
+
+.banner .right .content {
+    padding: 0 18px;
+    
+}
+
+.banner .right .content dl{
+    padding: 15px 0;
+    border-bottom: 2px solid #f8f8f8;
+}
+
+.banner .right .content dl dt{
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.banner .right .content dl dd{
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.banner .right a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    margin: 4px auto;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    color: #00a4ff;
+}
+
+.tuijian .wrapper{
+    margin-top: 8px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(118,118,118,0.2);
+}
+
+.tuijian .wrapper h2{
+    float: left;
+    margin-left: 34px;
+    margin-right: 34px;
+    line-height: 60px;
+    color: #00a4ff;
+    font-size: 16px;
+}
+
+.tuijian .wrapper ul li{
+    float: left;
+    display: block;
+    line-height: 60px;
+    
+}
+
+.tuijian .wrapper ul li a{
+    padding: 0 33px;
+    border-left: 1px solid #bfbfbf;
+    color: #454545;
+    font-size: 16px;
+}
+
+.tuijian .wrapper .xq a{
+    float: right;
+    display: block;
+    margin-right: 26px;
+    line-height: 60px;
+    color: #00a4ff;
+    font-size: 14px;
+}
+
+.tuijian2 {
+    margin-top: 37px;
+    /* background-color: pink; */
+}
+
+.tuijian2 .tit{
+    height: 40px;
+}
+
+.tuijian2 h2{
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.tuijian2 .tit a{
+    float: right;
+    margin-right: 30px;
+    display: block;
+    line-height: 12px;
+    color: #a5a5a5;
+    font-size: 15px;
+}
+
+.tuijian2 .content li{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 270px;
+    width: 228px;
+    background-color: #fff;
+}
+
+.tuijian2 .content li:nth-child(5n){
+    margin-right: 0;
+}
+
+.content li a img{
+    height: 155px;
+    width: 228px;
+}
+
+.content li a h3{
+    padding: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #050505;
+}
+
+.content li .txt{
+    padding: 0 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+.content li span{
+    color: #ff7c2d;
+}
+
+.footer{
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+/* 定位 */
+.tuijian2 .content li{
+    position: relative;
+}
+
+.tuijian2 .hot{
+    position: absolute;
+    right: -4px;
+    top:4px;
+    height: 24px;
+    width: 40px;
+}

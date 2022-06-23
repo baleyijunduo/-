@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 继承特性，子元素可以继承父元素控制元素的操作 */
+        /* 如果子类本身有属性时，不会继承父类元素，例如a标签颜色不会继承父级 */
+        .cl
+        {
+            background-color: blue;
+            color: red;
+            font: italic 700 70px/100px 宋体;
+            height: 1000px;
+            text-indent: 2em;
+        }
+
+        /* 层叠性，相同属性后面会覆盖前面的 */
+    </style>
+</head>
+<body>
+    <div class="cl">
+        我是小浩我是小浩
+        <span>我是雷浩我是雷浩</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 结构伪类写法 */
+        /* 选中子类中的第一个 */
+        li:first-child{
+            color: royalblue;
+        }
+        /* 选中子类中的最后一个 */
+        li:last-child{
+            color: skyblue;
+        }
+        /* 选中子类中的第n个 */
+        li:nth-child(2)
+        {
+            color: red;
+        }
+        /* 选中子类中的倒数第n个 */
+        li:nth-last-child(2)
+        {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>第1个Li</li>
+        <li>第2个Li</li>
+        <li>第3个Li</li>
+        <li>第4个Li</li>
+        <li>第5个Li</li>
+        <li>第6个Li</li>
+        <li>第7个Li</li>
+        <li>第8个Li</li>
+    </ol>
+</body>
+</html>

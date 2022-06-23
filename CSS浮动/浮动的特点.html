@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 浮动脱离标准流 相当于飘起来了-->
+    <!-- 浮动可以设置宽高，但不能通过text-align:center或者margin：0 auto设置居中 -->
+    <!-- CSS的书写顺序：
+    1.浮动/display;
+    2.盒子模型:margin,padding,border,宽高背景;
+    3.文字样式；
+    可以使浏览器执行效率变高 -->
+    <style>
+
+        .top{
+            height: 40px;
+            background-color: black;
+        }
+
+        .head{
+            height: 100px;
+            width: 1226px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+        .center{
+            width: 1226px;
+            height: 460px;
+            margin: 0 auto;
+            background-color: green;
+        }
+        .left{
+            height: 460px;
+            width: 234px;
+            background-color: #ffa500;
+            float: left;
+        }
+
+        .right{
+            height: 460px;
+            width: 992px;
+            background-color: #87ceeb;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="head"></div>
+    <div class="center">
+        <div class="left">1</div>
+        <div class="right">1</div>
+    </div>
+</body>
+</html>

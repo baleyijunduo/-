@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+        }
+
+        .son{
+            position: relative;
+            /* 父级改位置一般都用相对定位 */
+            /* 因为如果父级用绝对定位会带着子级移动 */
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+
+        .sun{
+            position: absolute;
+            /* 如果父级没定位，则根据窗口定位 */
+            /* 查找父级方式为就近查找，父级找不到就找父级的父级 */
+            top: 20px;
+            right: 20px;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">
+            <div class="sun">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

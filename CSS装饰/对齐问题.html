@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            /* 当设置相同高度时，因为存在padding和border的不同，所以高度不一定相同，这时要用box-size进行设置 */
+            height: 50px;
+            /* 但设置完后虽然高度相同，但依旧无法对齐，此时要用 vertical-align进行对齐*/
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="button" name="bottom" id="按钮" value="按钮">
+</body>
+</html>

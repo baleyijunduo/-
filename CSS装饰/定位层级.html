@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+
+        .box2{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 覆盖规则：标准 < 浮动 < 定位 -->
+    <!-- 如果两个标签都是定位，谁靠后谁覆盖 -->
+    <!-- 可以用 z-index决定层级，设定的整数越大，层级越靠前,默认是0 -->
+    <!-- 必须要有定位，z-index才能生效 -->
+    <div class="box2"></div>
+    <div class="box1"></div>
+</body>
+</html>

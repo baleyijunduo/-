@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            margin: 0 auto;
+            /* height: 100px; */
+            width: 1000px;
+            /* background-color: pink; */
+        }
+
+        .bottom{
+            margin: 0 auto;
+            height: 200px;
+            width: 2000px;
+            background-color: green;
+        }
+
+        .left{
+            float: left;
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+
+        .rigth{
+            float: right;
+            height: 300px;
+            width: 50px;
+            background-color :rebeccapurple; 
+        }
+
+        .clearfix{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 清楚浮动给其他标签带来的影响 -->
+    <!-- 如果去掉浮动的父级标签高度，下面的标签将上移 -->
+    <!-- 最直接的方法就是给父级元素设置高度 -->
+    <!-- 还可以使用额外标签法 -->
+    <div class="top">
+        <div class="left"></div>
+        <div class="rigth"></div>
+        <!-- 额外标签法在浮动标签的父级内末尾加上一个带有clear：both属性的块级标签 -->
+        <!-- clear：both是清除左右浮动的影响 -->
+        <!-- 缺点是添加了额外标签，令页面复杂 -->
+        <div class="clearfix"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>
