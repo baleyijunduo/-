@@ -1,7 +1,8 @@
 /* 各个页面相同样式表 */
 /* 版心 */
 .wrapper{
-    width:1240px;
+    /* width:81vw; */
+     width:1240px;
     margin:0 auto;
 }
 
